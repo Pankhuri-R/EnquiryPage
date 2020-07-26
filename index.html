@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Enquiries</title>
+
+        <!-- Bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- My CSS and JS -->
+        <link rel="stylesheet" href="enq-css.css">
+
+        <script>
+
+          function showHide(){
+            if(document.getElementById('form').style.display=="none"){
+              document.getElementById('form').style.display="block";
+            }
+            else{
+              document.getElementById('form').style.display="none";
+            }
+          }
+
+          function collapse(){
+            if(document.getElementById('coll-table').style.display=="none"){
+            document.getElementById('coll').style.display="none";
+            document.getElementById('enquiry').style.width="50vw";
+            document.getElementById('coll-table').style.display="inline-block";
+            document.getElementById('coll-table').style.width="40vw";
+            }
+            else{
+              document.getElementById('coll-table').style.display="none";
+            document.getElementById('enquiry').style.width="70vw";
+            document.getElementById('coll').style.display="inline-block";
+            document.getElementById('coll').style.width="24vw";
+            }
+          }
+
+          
+        </script>
+    </head>
+
+    <body >
+        <header class="primary-header">
+            <img class="logo" src="https://images.template.net/wp-content/uploads/2017/04/Logo-Design1.jpg" alt="logo">
+        </header>
+        <div class="topnav">
+          <a href="#">Dashboard</a>
+          <a class="active" href="#home">Enquiries</a>
+          <a href="#">Follow-ups</a>
+          <a href="#">Emails</a>
+          <a href="#">Settings</a>
+            <i class="fa fa-search style" id="button" onclick="showHide()"></i>
+        </div>
+
+        <h2>Welcome to the enquiries page</h2>
+        <p>If you have any enquiries then kindly put it here!</p>
+        
+       <div id="form">
+          <form action="#">
+            <input type="text" placeholder="Name" required>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="tel" placeholder="Mobile">
+            <input type="date"  placeholder="Date">
+            <button type="button" class="btn btn-danger">Search
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+<div class="cover">
+        <div class="enquiry" id="enquiry">
+            <ul class="list-group " onclick="collapse()">
+              <li class="list-group-item justify-content-between align-items-center"  >
+              <span class="badge badge-primary badge-pill" id="date"><script> document.write(new Date().toLocaleDateString()); </script>
+              </span>
+                <span class="badge badge-primary badge-pill">20</span>
+                <br/>
+              <span class="name" id="name">Name: Chuck Severace</span>
+              <span class="rest-fields">Email: chucks@hotmail.com</span>
+              <br/>
+              <span class="name">Mobile: 987865389</span>
+              <span class="rest-fields">Status:</span>
+              <br/>
+              <span class="rest-fields">Comments:</span>
+              <textarea class="comm" name="comments"></textarea>
+              </li>
+              <li class="list-group-item justify-content-between align-items-center">
+                <span class="badge badge-primary badge-pill" id="date"><script> document.write(new Date().toLocaleDateString()); </script>
+                </span>
+                  <span class="badge badge-primary badge-pill">19</span>
+                  <br/>
+                <span class="name" id="name">Name: Chuck Severace</span>
+                <span class="rest-fields">Email: chucks@hotmail.com</span>
+                <br/>
+                <span class="name" >Mobile: 987865389</span>
+                <span class="rest-fields">Status:</span>
+                <br/>
+                <span class="rest-fields">Comments:</span>
+                <textarea class="comm" name="comments"></textarea>
+              </li>
+              <li class="list-group-item justify-content-between align-items-center">
+                <span class="badge badge-primary badge-pill" id="date"><script> document.write(new Date().toLocaleDateString()); </script>
+                </span>
+                  <span class="badge badge-primary badge-pill">18</span>
+                  <br/>
+                <span class="name" id="name">Name: Chuck Severace</span>
+                <span class="rest-fields">Email: chucks@hotmail.com</span>
+                <br/>
+                <span class="name">Mobile: 987865389</span>
+                <span class="rest-fields">Status:</span>
+                <br/>
+                <span class="rest-fields">Comments:</span>
+                <textarea class="comm" name="comments"></textarea>
+              </li>
+              <li class="list-group-item justify-content-between align-items-center">
+                <span class="badge badge-primary badge-pill" id="date"><script> document.write(new Date().toLocaleDateString()); </script>
+                </span>
+                  <span class="badge badge-primary badge-pill">17</span>
+                  <br/>
+                <span class="name" id="name">Name: Chuck Severace</span>
+                <span class="rest-fields">Email: chucks@hotmail.com</span>
+                <br/>
+                <span class="name">Mobile:9878653897</span>
+                <span class="rest-fields">Status:</span>
+                <br/>
+                <span class="rest-fields">Comments:</span>
+                <textarea class="comm" name="comments"></textarea>
+              </li>
+              <li class="list-group-item justify-content-between align-items-center">
+                <span class="badge badge-primary badge-pill" id="date"><script> document.write(new Date().toLocaleDateString()); </script>
+                </span>
+                  <span class="badge badge-primary badge-pill">16</span>
+                  <br/>
+                <span class="name" id="name">Name: Chuck Severace</span>
+                <span class="rest-fields">Email: chucks@hotmail.com</span>
+                <br/>
+                <span class="name">Mobile: 987865389</span>
+                <span class="rest-fields">Status:</span>
+                <br/>
+                <span class="rest-fields">Comments:</span>
+                <textarea class="comm" name="comments"></textarea>
+              </li>
+              <li class="list-group-item justify-content-between align-items-center">
+                <span class="badge badge-primary badge-pill" id="date"><script> document.write(new Date().toLocaleDateString()); </script>
+                </span>
+                  <span class="badge badge-primary badge-pill">15</span>
+                  <br/>
+                <span class="name" id="name">Name: Chuck Severace</span>
+                <span class="rest-fields">Email: chucks@hotmail.com</span>
+                <br/>
+                <span class="name">Mobile: 987865389</span>
+                <span class="rest-fields">Status:</span>
+                <br/>
+                <span class="rest-fields">Comments:</span>
+                <textarea class="comm" name="comments"></textarea>
+              </li>
+            </ul>
+        </div>
+
+        <div class="coll" id="coll">
+          <img class="img" src="https://www.crizac.co.uk/image/cache/catalog/University_logo/enquiry-228x228.png" alt="enq1">
+          <img class="img" src="https://i1.wp.com/latitudeinnovation.com.my/wp-content/uploads/2020/04/inquiry.png?resize=300%2C292&ssl=1" alt="enq2">
+          <img class="img" src="https://drilltoolsksa.com/wp-content/uploads/2020/01/Enquiry.png" alt="enq3">
+        </div>
+
+        <div class="coll-table" id="coll-table">
+          <table class="table  table-dark table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Enquiry Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Name</td>
+                <td>Chuck Severance</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>chucks@hotmail.com</td>
+              </tr>
+              <tr>
+                <td>Mobile</td>
+                <td>9897654897</td>
+              </tr>
+              <tr>
+                <td>Location</td>
+                <td>1 Mark Antiono</td>
+              </tr>
+              <tr>
+                <td>Department</td>
+                <td>Sales</td>
+              </tr>
+              <tr>
+                <td>Sun-department</td>
+                <td>" "</td>
+              </tr>
+              <tr>
+                <td>Manager</td>
+                <td>" "</td>
+              </tr>
+              <tr>
+                <td>Interested in</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Source</td>
+                <td>Indiamart</td>
+              </tr>
+              <tr>
+                <td>Sub-source</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Message</td>
+                <td>Not given</td>
+              </tr>
+              <tr>
+                <td>URL</td>
+                <td>" "</td>
+              </tr>
+              <tr>
+                <td>Company</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Notes</td>
+                <td><textarea class="comm" name="notes" id="" rows="2"></textarea></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    </body>
+</html>
